@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".firestore.Activity_Firestore_GravarDados"
+    android:background="@color/branco">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/ic_logo_edit"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_logo_edit"/>
+
+    <!-- CAMPO DE NOME DA PASTA QUE VAI PARA OS REGISTROS -->
+    <EditText
+        android:id="@+id/editText_nome_pasta_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="NOME - PASTA"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <!--CAMPO DE NOME DO REGISTRO -->
+    <EditText
+        android:id="@+id/editText_nome_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="NOME - REGISTRO"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <!-- CAMPO QUE CAPTA DETALHES -->
+    <EditText
+        android:id="@+id/editText_prioridade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="GRAU DE PRIORIDADE"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <!-- BOTÃO PARA SALVAR O REGISTRO -->
+        <Button
+            android:id="@+id/button_Firestore_GravarAlterarRemover_Salvar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:text="SALVAR"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_button"/>
+
+        <!-- BOTÃO PARA ALTERAR O REGISTRO -->
+        <Button
+            android:id="@+id/button_Firestore_GravarAlterarRemover_Alterar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:text="ALTERAR"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_button"/>
+
+
+        <!-- BOTÃO PARA REMOVER O REGISTRO -->
+        <Button
+            android:id="@+id/button_Firestore_GravarAlterarRemover_Remover"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:text="REMOVER"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/branco"
+            android:background="@drawable/shape_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
